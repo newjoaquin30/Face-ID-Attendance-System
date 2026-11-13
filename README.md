@@ -1,7 +1,5 @@
 # FACE ID ATTENDANCE SYSTEM (Recreation since research defense)
 
-------------------------------------------------------------------------------------------
-
 # Face-ID-Attendance-System
 - A system that scans for the student's name and face and automatically records the attendance.
 
@@ -29,3 +27,7 @@ their perspective subjects to take their attendance. And after they are at their
 - MYSQL
 
 ------------------------------------------------------------------------------------------
+
+# Backup Video
+Video Link: https://drive.google.com/file/d/1ejj_1YKr4ubFD0pMYKhSqUwAUh3bSx2x/view?usp=drive_link
+- This link will serve as a backup, incase if the system is not working as intended.
