@@ -1,0 +1,506 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Shrikhand&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+:root{
+    --primary-color: blue;
+    --primary-font: "Poppins", sans-serif;
+    --secondary-font: "Shrikhand", sans-serif;
+}
+
+body{
+    background: rgb(40, 40, 40);
+}
+
+.blur{
+    position: absolute;
+    z-index: -100;
+    box-shadow: 0 0px 250px 190px blue;
+    top: 138%;
+}
+
+.scroll{
+    background: rgba(0, 0, 255, 0.736);
+    backdrop-filter: blur(10px) saturate(180%);
+    -webkit-backdrop-filter: blur(10px) saturate(180%);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    padding: 12px 12px;
+}
+
+.blur-effect{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation-bar .nav-logo .logo{
+    display: flex;
+    align-items: center;
+    font-family: var(--secondary-font);
+    color: white;
+    letter-spacing: 1.5px;
+    margin-bottom: 1.4rem;
+}
+
+.navigation-bar .nav-logo .logo img{
+    max-width: 60px;
+    margin-right: 0.5rem;
+    background: white;
+    border-radius: 100vw;
+}
+
+.navigation-bar{
+    padding: 22px 22px;
+    position: sticky;
+    top: 0;
+    transition: all 0.4s ease;
+    z-index: 1;
+}
+
+.navigation-bar .nav-links{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 26px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin-left: 4.5rem;
+}
+
+.navigation-bar .nav-links .link a:hover{
+    border-bottom: 2px solid white;
+    padding-bottom: 5px;
+}
+
+.main-container{
+    padding: 4.5rem 2rem;
+}
+
+.main-contents .title{
+    text-align: center;
+    color: white;
+    font-family: var(--primary-font);
+    font-size: 2.25rem;
+}
+
+.main-contents .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-contents .icon ion-icon{
+    font-size: 2.25rem;
+    border-radius: 50vw;
+    background: white;
+    padding: 6px 6px;
+}
+
+.main-contents .sub-title{
+    text-align: center;
+    color: #ccccccaf;
+    font-size: 2rem;
+    font-family: var(--primary-font);
+}
+
+.main-contents .text{
+    text-align: center;
+    color: white;
+    margin-top: 1rem;
+    font-size: 1.55rem;
+    font-family: var(--primary-font);
+}
+
+.main-contents .button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.main-contents .button .start{
+    padding: 1rem 2rem;
+    font-family: var(--primary-font);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.main-contents .button .start:hover{
+    background: var(--primary-color);
+    color: white;
+}
+
+.main-contents .cafe{
+    float: right;
+    background: white;
+    padding: 5px 5px;
+    border-radius: 50vw;
+    margin-top: -19rem;
+    font-size: 2.75rem;
+    margin-right: 3rem;
+}
+
+.main-contents .alarm{
+    margin-left: 3rem;
+    background: white;
+    padding: 5px 5px;
+    border-radius: 50vw;
+    margin-top: -19rem;
+    font-size: 2.75rem;
+}
+
+.about-container{
+    background: rgb(19, 19, 19);
+    margin-top: 7rem;
+    padding: 40px 40px;
+}
+
+.about-contents .contacts{
+    color: white;
+    font-family: var(--primary-font);
+}
+
+.about-contents .contact{
+    margin-top: 1.5rem;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    text-align: center;
+}
+
+.about-contents .contact .card{
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    height: max-content;
+}
+
+.about-contents .contact .card .phone{
+    margin-top: 0.5rem;
+}
+
+.programs-contents{
+    margin-top: 20rem;
+    color: white;
+}
+
+.program-text .program-title{
+    text-align: center;
+    font-size: 2.25rem;
+    font-family: var(--primary-font);
+}
+
+.program-text .text{
+    text-align: center;
+    margin-bottom: 4rem;
+    font-size: 1.25rem;
+    margin-top: 0.5rem;
+    font-family: var(--primary-font);
+}
+
+.program-cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.program-cards .card{
+    padding: 20px 20px;
+    border-radius: 10px;
+    background: rgb(51, 51, 255);
+    height: max-content;
+    transition: all 0.3s ease;
+}
+
+.program-cards .card:hover{
+    background-image: url("../img/html_logo.jfif");
+    background-position: center;
+    transform: translateY(-5px);
+    color: black;
+}
+
+.program-cards #card:hover{
+    color: white;
+    transform: translateY(0px);
+}
+
+.program-cards #card1:hover{
+    background-image: url("../img/software.png");
+    background-position: center;
+    transform: translateY(-5px);
+    color: black;
+}
+
+.program-cards #card2:hover{
+    background-image: url("../img/ux.jfif");
+    background-position: center;
+    transform: translateY(-5px);
+    color: black;
+}
+
+.program-cards #card3:hover{
+    background-image: url("../img/secure.png");
+    background-position: center;
+    transform: translateY(-5px);
+    color: white;
+}
+
+.program-cards #card4:hover{
+    background-image: url("../img/mobile.png");
+    background-position: center;
+    transform: translateY(-5px);
+    color: black;
+}
+
+.programs .card .web{
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.programs .card .desktop{
+    margin-right: 0.5rem;
+}
+
+.programs .card .text{
+    margin-top: 0.5rem;
+    font-family: var(--primary-font);
+}
+
+.programs #card{
+    background: transparent;
+}
+
+.shs-contents{
+    margin-top: 20rem;
+}
+
+.shs-contents .shs-title{
+    color: white;
+    font-family: var(--primary-font);
+    margin-bottom: 0.5rem;
+    font-size: 2.25rem;
+    text-align: center;
+}
+
+.shs-contents .text{
+    color: #ccc;
+    font-size: 1.35rem;
+    font-family: var(--primary-font);
+    text-align: center;
+}
+
+.strands .ict{
+    color: white;
+}
+
+.strands{
+    margin-top: 5rem;
+    font-size: 1.3rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.tvl{
+    color: white;
+    text-align: center;
+    margin-bottom: -3rem;
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    margin-top: 5rem;
+    font-size: 1.75rem;
+}
+
+.strands .strand{
+    color: white;
+    padding: 5px 5px;
+    margin-left: 0.5rem;
+}
+
+.acads{
+    color: white;
+    text-align: center;
+    margin-bottom: -3rem;
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    margin-top: 10rem;
+    font-size: 1.75rem;
+}
+
+#tracks{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.sports{
+    color: white;
+    text-align: center;
+    margin-bottom: -3rem;
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    margin-top: 10rem;
+    font-size: 1.75rem;
+}
+
+.other-container{
+    background: rgb(70, 70, 70);
+    backdrop-filter: blur(10px) saturate(180%);
+    -webkit-backdrop-filter: blur(10px) saturate(180%);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    padding: 30px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.other-container .image-logo img{
+    max-width: 80px;
+    background: white;
+    border-radius: 50vw;
+    margin-right: 0.9rem;
+    margin-top: -3rem;
+}
+
+.other-container .image-logo{
+    display: flex;
+    align-items: center;
+}
+
+.other-container .title .logo{
+    font-family: var(--secondary-font);
+    color: white;
+    letter-spacing: 1.2px;
+}
+
+.other-container .title .address{
+    color: #ccc;
+    text-transform: uppercase;
+    margin-top: 0.3rem;
+    font-size: 1.25rem;
+}
+
+.other-container .title .no{
+    color: #ccc;
+    margin-top: 0.4rem;
+    font-size: 1.25rem;
+}
+
+.other-container .title .social{
+    margin-top: 0.6rem;
+    margin-bottom: 2rem;
+}
+
+.other-container .title .social a{
+    font-size: 1.5rem;
+}
+
+.other-container .other-links{
+    margin-top: -9.8rem;
+}
+
+.other-container .other-links a{
+    margin: 5px;
+    text-transform: uppercase;
+}
+
+.other-container .other-links a:hover{
+    border-bottom: 2px solid white;
+    padding-bottom: 5px;
+}
+
+.other-container .copyright{
+    color: white;
+}
+
+.menu{
+    display: none;
+    cursor: pointer;
+}
+
+/* Media Layout */
+@media (max-width: 768px){
+    #navbar{
+        height: 105px;
+    }
+
+    #nav-links{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background: #ccccccad;
+        backdrop-filter: blur(10px) saturate(180%);
+        -webkit-backdrop-filter: blur(10px) saturate(180%);
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+        width: 100%;
+        left: -120%;
+        padding: 20px 20px;
+        transition: all 0.5s ease;
+    }
+
+    .menu{
+        display: block;
+        color: white;
+        font-size: 2rem;
+        margin-top: -1.3rem;
+        margin-left: 4rem;
+    }
+
+    .nav-logo{
+        display: flex;
+        align-items: center;
+    }
+
+    .program-cards{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .other-links{
+        display: none;
+    }
+}
+
+@media (max-width: 440px){
+    .nav-logo .logo .name{
+        display: none;
+    }
+
+    .menu{
+        margin-left: 17rem;
+        font-size: auto;
+    }
+
+    .alarm, .cafe{
+        display: none;
+    }
+    
+    .about-contents .contact{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #tracks{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

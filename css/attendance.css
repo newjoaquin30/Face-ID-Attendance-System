@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Shrikhand&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+:root{
+    --primary-color: blue;
+    --primary-font: "Poppins", sans-serif;
+    --secondary-font: "Shrikhand", sans-serif;
+}
+
+.attendance-container{
+    padding: 3rem 2rem;
+}
+
+.attendance-contents .title{
+    font-family: var(--secondary-font);
+    font-weight: 500;
+}
+
+.attendance-contents .cam{
+    font-family: var(--primary-font);
+    margin-top: 2rem;
+}
+
+.main-system{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.attendance .time{
+    text-align: center;
+}
+
+.time{
+    font-family: var(--primary-font);
+}
+
+.attendance .cam{
+    text-align: center;
+}
+
+.face-status{
+    font-family: var(--primary-font);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.camera{
+    margin-left: 19rem;
+}
+
+.main{
+    text-align: center;
+    font-family: var(--primary-font);
+}
+
+.main a{
+    color: black;
+}
+
+/* Media Layout */
+@media (max-width: 768px){
+    .nav-logo .logo .name{
+        display: none;
+    }
+
+    .dashboard-nav .nav-links .dropdown-contents{
+        width: 35%;
+        margin-left: -9rem;
+    }
+}
+
+@media (max-width: 440px){
+    .dashboard-nav .nav-links .link .name{
+        display: none;
+    }
+
+    .dashboard-nav .nav-links .dropdown-contents{
+        width: 50%;
+        margin-left: -9rem;
+    }
+}

@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Shrikhand&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+:root{
+    --primary-color: blue;
+    --primary-font: "Poppins", sans-serif;
+    --secondary-font: "Shrikhand", sans-serif;
+}
+
+body{
+    background: rgb(40, 40, 40);
+}
+
+.login-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.9rem 2rem;
+}
+
+form{
+    background: rgb(10, 10, 216);
+    padding: 20px 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px) saturate(180%);
+    -webkit-backdrop-filter: blur(10px) saturate(180%);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    width: 47%;
+    overflow-y: scroll;
+    scrollbar-color: rgb(10, 10, 216) rgb(10, 10, 216);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-left: 43rem;
+    height: 580px;
+}
+
+form img{
+    max-width: 60px;
+    background: white;
+    border-radius: 50vw;
+    margin-right: 0.6rem;
+}
+
+form .logo{
+    display: flex;
+    align-items: center;
+    color: white;
+    font-family: var(--secondary-font);
+    letter-spacing: 1.2px;
+}
+
+form .welcome{
+    margin-top: 0.5rem;
+    color: white;
+    font-family: var(--primary-font);
+}
+
+form .text{
+    color: #ccc;
+    font-family: var(--primary-font);
+    margin-top: 0.5rem;
+}
+
+form .line{
+    border: 2px solid white;
+    margin-top: 0.9rem;
+    margin-bottom: 0.9rem;
+    border-radius: 50vw;
+}
+
+form label{
+    text-transform: uppercase;
+    color: white;
+}
+
+form #email{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 14px 14px;
+    font-family: var(--primary-font);
+    width: 100%;
+    border-radius: 50vw;
+}
+
+form #password{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 14px 14px;
+    font-family: var(--primary-font);
+    width: 100%;
+    border-radius: 50vw;
+}
+
+form #fname{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 14px 14px;
+    font-family: var(--primary-font);
+    width: 100%;
+    border-radius: 50vw;
+}
+
+form #mname{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 14px 14px;
+    font-family: var(--primary-font);
+    width: 100%;
+    border-radius: 50vw;
+}
+
+form #lname{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 14px 14px;
+    font-family: var(--primary-font);
+    width: 100%;
+    border-radius: 50vw;
+}
+
+form .password-show{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+form #chck{
+    margin-right: 0.5rem;
+}
+
+form .signin{
+    padding: 1rem 2rem;
+    width: 100%;
+    border-radius: 50vw;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    font-family: var(--primary-font);
+    margin-top: 1.5rem;
+}
+
+form .signin:hover{
+    background: rgb(0, 0, 175);
+    color: white;
+}
+
+.text-aside{
+    background: rgb(0, 0, 175);
+    padding: 200px 30px;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    left: 0;
+    width: 51%;
+}
+
+.text-aside img{
+    max-width: 60px;
+    background: white;
+    border-radius: 50vw;
+    margin-right: 0.5rem;
+}
+
+.text-aside .logo{
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    font-family: var(--secondary-font);
+    color: white;
+    letter-spacing: 1.2px;
+}
+
+.text-aside .title{
+    color: white;
+    font-size: 1.4rem;
+    font-family: var(--primary-font);
+}
+
+.text-aside .text{
+    margin-top: 1rem;
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.text-aside .copyright{
+    color: white;
+}
+
+form .error{
+    background: rgb(255, 31, 31);
+    padding: 10px 10px;
+    margin-top: 0.5rem;
+    border-radius: 10px;
+    color: white;
+    font-family: var(--primary-font);
+}
+
+.text-aside .acc{
+    margin-top: 1rem;
+    font-size: 1.3rem;
+    font-family: var(--primary-font);
+    color: white;
+}
+
+.text-aside .acc a{
+    font-weight: bold;
+}
+
+/* Media Layout */
+@media (max-width: 768px){
+    .text-aside{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+    }
+
+    form{
+        width: auto;
+        margin-left: 1rem;
+    }
+}
